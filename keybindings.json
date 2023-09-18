@@ -1,0 +1,79 @@
+// mac keybinding
+[
+  // change case
+  {
+    "key": "cmd+m cmd+u",
+    "command": "editor.action.transformToUppercase",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "cmd+m cmd+l",
+    "command": "editor.action.transformToLowercase",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "cmd+m cmd+k",
+    "command": "editor.action.transformToKebabcase",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "cmd+m cmd+s",
+    "command": "editor.action.transformToSnakecase",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "cmd+m cmd+p",
+    "command": "extension.changeCase.pascal",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "cmd+m cmd+c",
+    "command": "extension.changeCase.camel",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "cmd+m cmd+t",
+    "command": "editor.action.transformToTitlecase"
+  },
+
+  // navigate
+  {
+    "key": "cmd+[",
+    "command": "workbench.action.navigateBack",
+    "when": "canNavigateBack"
+  },
+  {
+    "key": "ctrl+-",
+    "command": "-workbench.action.navigateBack",
+    "when": "canNavigateBack"
+  },
+  {
+    "key": "cmd+]",
+    "command": "workbench.action.navigateForward",
+    "when": "canNavigateForward"
+  },
+  {
+    "key": "ctrl+shift+-",
+    "command": "-workbench.action.navigateForward",
+    "when": "canNavigateForward"
+  },
+
+  // mac 中文輸入時可以註解
+  {
+    "key": "cmd+[Slash]",
+    "command": "editor.action.commentLine",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+
+  // mac 中文輸入 && when not in text editor 可以打開 terminal
+  {
+    "key": "ctrl+[Backquote]",
+    "command": "workbench.action.terminal.toggleTerminal"
+  }
+
+  // {
+  //   "key": "shift+alt+c",
+  //   "command": "copyFilePath",
+  //   "when": "editorFocus"
+  // }
+]

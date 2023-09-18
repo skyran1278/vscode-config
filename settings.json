@@ -1,0 +1,131 @@
+{
+  // ****************************************************************************************************
+  // VSCode
+  // ****************************************************************************************************
+
+  // bracket color
+  "editor.bracketPairColorization.enabled": true,
+
+  // save
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true,
+    "source.fixAll.eslint": true,
+    "source.organizeImports": true,
+    "source.sortMembers": true
+  },
+  "files.insertFinalNewline": true,
+  "files.trimTrailingWhitespace": true,
+
+  // editor
+  "editor.cursorWidth": 3,
+  "editor.inlineSuggest.enabled": true,
+  "editor.mouseWheelZoom": true,
+  "editor.renderWhitespace": "boundary",
+  // "editor.tabSize": 2,
+  // "editor.guides.bracketPairs": true,
+  // "editor.suggestSelection": "first",
+  // "editor.suggest.snippetsPreventQuickSuggestions": false,
+
+  // explorer
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+
+  // files
+  "files.associations": {
+    ".clang-format": "yaml",
+    "*.cls": "vb",
+    ".env.dev": "properties",
+    ".env.example": "properties"
+  },
+
+  // git
+  "git.autofetch": true,
+  "git.confirmSync": false,
+  "git.enableSmartCommit": true,
+  // "git.closeDiffOnOperation": true,
+
+  // telemetry vscode send data to microsoft
+  "telemetry.telemetryLevel": "off",
+
+  // terminal
+  "terminal.integrated.defaultProfile.linux": "zsh",
+  "terminal.integrated.defaultProfile.osx": "zsh",
+  "terminal.integrated.defaultProfile.windows": "PowerShell",
+  "terminal.integrated.fontFamily": "MesloLGS NF",
+  // "terminal.integrated.tabs.enabled": true,
+
+  // workbench
+  "workbench.editor.untitled.hint": "hidden",
+  "workbench.startupEditor": "none",
+
+  // window 置中
+  // "window.commandCenter": true,
+
+  // TS JS
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  // "javascript.inlayHints.parameterNames.enabled": "literals",
+  // "typescript.suggest.paths": false,
+
+  // ****************************************************************************************************
+  // Extensions
+  // ****************************************************************************************************
+
+  // AWS Toolkit
+  "aws.telemetry": false,
+
+  // Code Spell Checker
+  "cSpell.userWords": [
+    "autofetch",
+    "Backquote",
+    "commitlint",
+    "datetime",
+    "esbenp",
+    "Intelli",
+    "Meslo",
+    "typeorm",
+    "uuidv",
+    "vsintellicode"
+  ],
+
+  // GitHub Copilot
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": false
+  },
+
+  // GitLens — Git supercharged
+  "gitlens.advanced.fileHistoryFollowsRenames": true,
+  // "gitlens.codeLens.enabled": false,
+  // "gitlens.hovers.currentLine.over": "line",
+  // "gitlens.statusBar.enabled": false,
+  // "gitlens.views.tags.files.layout": "tree",
+
+  // Material Icon Theme
+  "workbench.iconTheme": "material-icon-theme",
+  "material-icon-theme.activeIconPack": "nest",
+  "material-icon-theme.files.associations": {
+    "*.entity.ts": "nest-controller",
+    "*.args.ts": "nest-filter",
+    "*.input.ts": "nest-decorator",
+    "*.output.ts": "nest-middleware",
+    "*.type.ts": "nest-guard",
+    "*.loader.ts": "nest-service"
+  },
+  "material-icon-theme.folders.theme": "classic",
+
+  // One Dark Pro
+  "workbench.colorTheme": "One Dark Pro",
+
+  // Prettier - Code formatter
+  "[css][html][json][jsonc][javascript][javascriptreact][markdown][typescript][typescriptreact][yaml]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  // IntelliCode
+  // "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+
+  // YAML
+  "redhat.telemetry.enabled": false
+}

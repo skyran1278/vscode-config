@@ -1,0 +1,64 @@
+{
+  "recommendations": [
+    // Spell check
+    "Code Spell Checker",
+
+    // Git
+    "Git Graph",
+    "GitLens — Git supercharged",
+
+    // Autocomplete
+    "GitHub Copilot",
+    "GitHub Copilot Chat",
+    "IntelliCode",
+    "IntelliCode API Usage Examples",
+
+    // Theme
+    "Material Icon Theme",
+    "One Dark Pro",
+
+    // Import file
+    "Path Intellisense",
+
+    // .env
+    "DotENV",
+
+    // .editorconfig
+    "EditorConfig for VS Code",
+
+    // Change case
+    "change-case",
+
+    // View binary
+    "Hex Editor",
+
+    // Shell
+    "ShellCheck",
+
+    // GraphQL
+    "GraphQL",
+
+    // JS
+    "JavaScript (ES6) code snippets",
+    // JS Style
+    "ESLint",
+    "Prettier - Code formatter",
+
+    // Database
+    "Redis",
+    // View SQL in string
+    "Inline SQL",
+
+    // Docker
+    "Docker",
+    // Container development
+    "Dev Containers",
+    // Windows WSL
+    "WSL",
+
+    // SSH
+    "Remote - SSH",
+    "Remote - SSH: Editing Configuration Files",
+    "Remote Explorer"
+  ]
+}
