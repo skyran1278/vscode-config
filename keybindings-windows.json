@@ -1,0 +1,59 @@
+[
+  // change case
+  {
+    "key": "ctrl+m ctrl+u",
+    "command": "editor.action.transformToUppercase",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "ctrl+m ctrl+l",
+    "command": "editor.action.transformToLowercase",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "ctrl+m ctrl+k",
+    "command": "editor.action.transformToKebabcase",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "ctrl+m ctrl+s",
+    "command": "editor.action.transformToSnakecase",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "ctrl+m ctrl+p",
+    "command": "extension.changeCase.pascal",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "ctrl+m ctrl+c",
+    "command": "extension.changeCase.camel",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "ctrl+m ctrl+t",
+    "command": "editor.action.transformToTitlecase"
+  },
+
+  // windows quick fix
+  {
+    "key": "alt+oem_period",
+    "command": "editor.action.quickFix",
+    "when": "editorHasCodeActionsProvider && textInputFocus && !editorReadonly"
+  }
+
+  // {
+  //   "key": "shift+alt+c",
+  //   "command": "copyFilePath",
+  //   "when": "editorFocus"
+  // },
+  // {
+  //   "key": "shift+alt+r",
+  //   "command": "revealFileInOS"
+  // },
+  // {
+  //   "key": "ctrl+k",
+  //   "command": "workbench.action.terminal.clear",
+  //   "when": "terminalFocus && terminalHasBeenCreated && !accessibilityModeEnabled || terminalFocus && terminalProcessSupported && !accessibilityModeEnabled"
+  // },
+]
