@@ -59,9 +59,6 @@
   "workbench.editor.untitled.hint": "hidden",
   "workbench.startupEditor": "none",
 
-  // window 置中
-  // "window.commandCenter": true,
-
   // TS JS
   "javascript.updateImportsOnFileMove.enabled": "always",
   "typescript.updateImportsOnFileMove.enabled": "always",
@@ -92,7 +89,8 @@
   // GitHub Copilot
   "github.copilot.enable": {
     "*": true,
-    "plaintext": false
+    "plaintext": false,
+    "markdown": true
   },
 
   // GitLens — Git supercharged
@@ -119,7 +117,7 @@
   "workbench.colorTheme": "One Dark Pro",
 
   // Prettier - Code formatter
-  "[css][html][json][jsonc][javascript][javascriptreact][markdown][typescript][typescriptreact][yaml]": {
+  "[css][html][json][jsonc][javascript][javascriptreact][markdown][typescript][typescriptreact][yaml][sql]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
 
@@ -127,5 +125,8 @@
   // "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
 
   // YAML
-  "redhat.telemetry.enabled": false
+  "redhat.telemetry.enabled": false,
+
+  // Todo Tree
+  "todo-tree.highlights.useColourScheme": true
 }
