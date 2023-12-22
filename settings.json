@@ -3,16 +3,19 @@
   // VSCode
   // ****************************************************************************************************
 
+  // debug
+  "debug.toolBarLocation": "commandCenter",
+
   // bracket color
   "editor.bracketPairColorization.enabled": true,
 
   // save
   "editor.formatOnSave": true,
   "editor.codeActionsOnSave": {
-    "source.fixAll": true,
-    "source.fixAll.eslint": true,
-    "source.organizeImports": true,
-    "source.sortMembers": true
+    "source.fixAll": "explicit",
+    "source.fixAll.eslint": "explicit",
+    "source.organizeImports": "explicit",
+    "source.sortMembers": "explicit"
   },
   "files.insertFinalNewline": true,
   "files.trimTrailingWhitespace": true,
@@ -53,10 +56,10 @@
   "terminal.integrated.defaultProfile.osx": "zsh",
   "terminal.integrated.defaultProfile.windows": "PowerShell",
   "terminal.integrated.fontFamily": "MesloLGS NF",
-  // "terminal.integrated.tabs.enabled": true,
+  // save terminal layout after exit
+  "terminal.integrated.persistentSessionReviveProcess": "onExitAndWindowClose",
 
   // workbench
-  "workbench.editor.untitled.hint": "hidden",
   "workbench.startupEditor": "none",
 
   // TS JS
@@ -90,15 +93,15 @@
   "github.copilot.enable": {
     "*": true,
     "plaintext": false,
-    "markdown": true
+    "markdown": true,
+    "typescript": true
   },
 
   // GitLens — Git supercharged
   "gitlens.advanced.fileHistoryFollowsRenames": true,
-  // "gitlens.codeLens.enabled": false,
-  // "gitlens.hovers.currentLine.over": "line",
-  // "gitlens.statusBar.enabled": false,
-  // "gitlens.views.tags.files.layout": "tree",
+  "gitlens.ai.experimental.openai.model": "gpt-4-1106-preview",
+  "gitlens.ai.experimental.provider": "openai",
+  "gitlens.experimental.generateCommitMessagePrompt": "Create a commit message adhering to '@commitlint/config-conventional' standards:\n- Format: type(scope?): subject\n- Ensure each line is under 80 characters.\n- Types: Choose from [build, chore, ci, docs, feat, fix, perf, refactor, revert, style, test, merge, config].\n- Scope: Use the relevant folder name.\n- Body Guidelines:\n  - Be concise, clear, and understandable.\n  - Write in the imperative, present tense.\n  - Start with a lowercase letter.\n  - Avoid ending sentences with a period.\n  - Separate points with a dash (-) where feasible.\n- Example: \n  - fix(authentication): improve password strength validation\n- Avoid enclosing the message in triple backticks.",
 
   // Material Icon Theme
   "workbench.iconTheme": "material-icon-theme",
@@ -109,7 +112,10 @@
     "*.input.ts": "nest-decorator",
     "*.output.ts": "nest-middleware",
     "*.type.ts": "nest-guard",
-    "*.loader.ts": "nest-service"
+    "*.loader.ts": "nest-service",
+    "*.processor.ts": "nest-resolver",
+    "*.enum.ts": "nest-gateway",
+    "*.interface.ts": "nest-gateway"
   },
   "material-icon-theme.folders.theme": "classic",
 
