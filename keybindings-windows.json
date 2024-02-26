@@ -40,6 +40,19 @@
     "key": "alt+oem_period",
     "command": "editor.action.quickFix",
     "when": "editorHasCodeActionsProvider && textInputFocus && !editorReadonly"
+  },
+
+  // windows clear terminal
+  {
+    "key": "ctrl+k",
+    "command": "workbench.action.terminal.clear",
+    "when": "terminalFocus && terminalHasBeenCreated && !accessibilityModeEnabled || terminalFocus && terminalProcessSupported && !accessibilityModeEnabled"
+  },
+
+  // ai
+  {
+    "key": "ctrl+m ctrl+m",
+    "command": "gitlens.generateCommitMessage"
   }
 
   // {
@@ -50,10 +63,5 @@
   // {
   //   "key": "shift+alt+r",
   //   "command": "revealFileInOS"
-  // },
-  // {
-  //   "key": "ctrl+k",
-  //   "command": "workbench.action.terminal.clear",
-  //   "when": "terminalFocus && terminalHasBeenCreated && !accessibilityModeEnabled || terminalFocus && terminalProcessSupported && !accessibilityModeEnabled"
   // },
 ]
