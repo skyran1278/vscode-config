@@ -68,6 +68,12 @@
   {
     "key": "ctrl+[Backquote]",
     "command": "workbench.action.terminal.toggleTerminal"
+  },
+
+  // git
+  {
+    "key": "cmd+m cmd+m",
+    "command": "gitlens.generateCommitMessage"
   }
 
   // {
