@@ -112,7 +112,7 @@
     "*.input.ts": "nest-decorator",
     "*.output.ts": "nest-middleware",
     "*.type.ts": "nest-guard",
-    "*.loader.ts": "nest-service",
+    "*.loader.ts": "nest-resolver",
     "*.processor.ts": "nest-resolver",
     "*.enum.ts": "nest-gateway",
     "*.interface.ts": "nest-gateway"
