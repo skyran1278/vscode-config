@@ -47,6 +47,7 @@
   "git.confirmSync": false,
   "git.enableSmartCommit": true,
   // "git.closeDiffOnOperation": true,
+  "git.inputValidationLength": 100,
 
   // telemetry vscode send data to microsoft
   "telemetry.telemetryLevel": "off",
@@ -114,6 +115,7 @@
     "*.type.ts": "nest-guard",
     "*.loader.ts": "nest-resolver",
     "*.processor.ts": "nest-resolver",
+    "*.provider.ts": "nest-service",
     "*.enum.ts": "nest-gateway",
     "*.interface.ts": "nest-gateway"
   },
