@@ -53,6 +53,12 @@
   {
     "key": "ctrl+m ctrl+m",
     "command": "gitlens.generateCommitMessage"
+  },
+
+  // git
+  {
+    "key": "ctrl+m ctrl+z",
+    "command": "git.undoCommit"
   }
 
   // {
