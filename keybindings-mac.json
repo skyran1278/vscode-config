@@ -1,3 +1,4 @@
+// mac keybinding
 [
   // change case
   {
@@ -11,7 +12,7 @@
     "when": "textInputFocus"
   },
   {
-    "key": "cmd+m cmd+k",
+    "key": "cmd+m cmd+d",
     "command": "editor.action.transformToKebabcase",
     "when": "textInputFocus"
   },
@@ -74,6 +75,14 @@
   {
     "key": "cmd+m cmd+m",
     "command": "gitlens.generateCommitMessage"
+  },
+  {
+    "key": "cmd+m cmd+z",
+    "command": "git.undoCommit"
+  },
+  {
+    "key": "cmd+m cmd+k",
+    "command": "workbench.action.terminal.clear"
   }
 
   // {

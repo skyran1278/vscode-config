@@ -14,7 +14,7 @@
   "editor.codeActionsOnSave": {
     "source.fixAll": "explicit",
     "source.fixAll.eslint": "explicit",
-    "source.organizeImports": "explicit",
+    "source.organizeImports": "explicit", // auto remove unused imports
     "source.sortMembers": "explicit"
   },
   "files.insertFinalNewline": true,
@@ -47,6 +47,8 @@
   "git.confirmSync": false,
   "git.enableSmartCommit": true,
   // "git.closeDiffOnOperation": true,
+  "git.inputValidation": true, // validate commit message
+  "git.inputValidationSubjectLength": 100,
   "git.inputValidationLength": 100,
 
   // telemetry vscode send data to microsoft
@@ -59,6 +61,7 @@
   "terminal.integrated.fontFamily": "MesloLGS NF",
   // save terminal layout after exit
   "terminal.integrated.persistentSessionReviveProcess": "onExitAndWindowClose",
+  "terminal.integrated.experimentalInlineChat": true,
 
   // workbench
   "workbench.startupEditor": "none",
@@ -108,16 +111,23 @@
   "workbench.iconTheme": "material-icon-theme",
   "material-icon-theme.activeIconPack": "nest",
   "material-icon-theme.files.associations": {
+    // typeorm
     "*.entity.ts": "nest-controller",
-    "*.args.ts": "nest-filter",
-    "*.input.ts": "nest-decorator",
-    "*.output.ts": "nest-middleware",
+    // queue
+    "*.processor.ts": "nest-filter",
+    "*.queue-events.ts": "nest-filter",
+    // graphql
+    "*.args.ts": "nest-guard",
+    "*.input.ts": "nest-guard",
+    "*.output.ts": "nest-guard",
     "*.type.ts": "nest-guard",
-    "*.loader.ts": "nest-resolver",
-    "*.processor.ts": "nest-resolver",
-    "*.provider.ts": "nest-service",
-    "*.enum.ts": "nest-gateway",
-    "*.interface.ts": "nest-gateway"
+    "*.loader.ts": "nest-guard",
+    // type
+    "*.enum.ts": "nest-middleware",
+    "*.interface.ts": "nest-middleware",
+    "*.interceptor.ts": "nest-middleware",
+    // logic
+    "*.provider.ts": "nest-service"
   },
   "material-icon-theme.folders.theme": "classic",
 
